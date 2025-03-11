@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#grid {
+  display: grid;
+  gap: 2px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ddd;
+}
+
+.cell {
+  width: 35px;
+  height: 35px;
+  background: white;
+  border: 1px solid #ddd;
+  transition: background 0.2s;
+  cursor: pointer;
+}
+
+.start {
+  background: #4caf50 !important;
+}
+
+.end {
+  background: #f44336 !important;
+}
+
+.path {
+  background: #ffeb3b;
+}
