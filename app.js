@@ -1,6 +1,6 @@
 // Grid dimensions
-const ROWS = 10;
-const COLS = 10;
+const ROWS = 30;
+const COLS = 50;
 let startNode = null;
 let endNode = null;
 
@@ -144,3 +144,5 @@ function resetGrid() {
 
 // Initialize when page loads
 document.addEventListener("DOMContentLoaded", createGrid);
+// Reset functionality
+document.getElementById("resetBtn").addEventListener("click", resetGrid);
