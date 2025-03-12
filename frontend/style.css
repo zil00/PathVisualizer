@@ -46,28 +46,41 @@ h1 {
   background: #ffeb3b;
 }
 
-
+/* Main Row Layout */
 .container {
   display: flex; /* Align items in a row */
-  justify-content: space-between; /* Spread elements across the row */
-  align-items: center; /* Vertically align items */
-  padding: 1px;
+  align-items: center; /* Vertically center */
 }
 
+/* Group Current and Destination */
 .search {
   display: flex; /* Align search inputs horizontally */
-  gap: 1px;
-  margin: right 1px; ; /* Space between search inputs */
+  gap: 1px; /* Remove space between search inputs */
 }
 
-#building, #start {
-  margin-left: 10px; /* Space between building and start button */
+/* Push Building and Start to the Right */
+.spacer {
+  flex-grow: 1; /* Fills space between search-group and right-group */
 }
 
+/* Group Building and Start */
+.right-group {
+  display: flex; /* Align building and start button */
+  gap: 1px; /* Remove space between building and start */
+}
+
+/* Ensure uniform styling for inputs, selects, and buttons */
 input, select, button {
   margin-top: 5px; /* Space between label and input */
 }
 
+/* Ensure button is clickable */
 #start button {
   cursor: pointer;
+}
+
+/* Floor buttons layout */
+.floor {
+  display: flex; /* Keep floor buttons in a row */
+  gap: 5px; /* Space between floor buttons */
 }
