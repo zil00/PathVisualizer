@@ -8,37 +8,39 @@
     <title>PathFinding Visualiser</title>
 </head>
 <body>
-    <div id ="Current location">Current location
-        <input type="text" id="Current Location" name ="current">
+    <div class = "container">
+        <div class = "search" id ="current-location">Current 
+            <input type="text" id="current-location" name ="current-location">
+        </div>
+        <div class = "search" id = "destination">Destination
+            <input type="text" id="destination" name ="destination">
+        </div>
+        <div id = "building">
+            <label for = "building">Building</label>
+            <select class = "dropdwn">
+            <option value="thorvaldson">Thorvaldson</option> 
+            <option value="spinks">Spinks</option>
+            <option value="artsnscience">Arts and Science</option>
+            </select>
+        </div>
+        <div id = "start">
+            <button name = "start">Start</button></div>
     </div>
-    <div id = "Destination">Destination
-        <input type="text" id="Destination" name ="Destination">
-    </div>
-    <div id = "Building">
-        <label for = "Building">Building</label>
-    <select class = "dropdwn">
-        <option value="Thorvaldson">Thorvaldson</option> 
-        <option value="Spinks">Spinks</option>
-        <option value="ArtsnScience">Arts and Science</option>
-    </select>
-    </div>
-    <div id = "Start">
-        <button name = "Start">Start</button></div>  
-    <div id = "Floor">
+    <div id = "floor">
         <button name ="firstFloor">1F</button></div>
-    <div id = "Floor">
+    <div id = "floor">
         <button name ="secondFloor">2F</button></div>
-    <div id = "Floor">
+    <div id = "floor">
         <button name ="thirdFloor">3F</button></div>
-    <button id="resetBtn">Reset Grid</button>
     <div id="grid"></div>
     <!-- In index.html -->
     <div class="map-overlay">
-        <img src="Images/firstfloor.png" alt="Thorvaldson">
+        <img src="../Images/firstfloor.png" alt="first floor Thorvaldson">
     </div>
+    <button id="resetBtn">Reset Grid</button>
     <script src="app.js"></script>
-    <div id = "Time">Time</div>
-    <div id = "Help">
+    <div id = "time">Time</div>
+    <div id = "help">
         <button name ="Help">?</button></div>
 </body>
 </html>
